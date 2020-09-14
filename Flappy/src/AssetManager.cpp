@@ -23,7 +23,6 @@ namespace Sonar
 
 		if(font.loadFromFile(fileName))
 			_fonts.emplace(name, font);
-
 	}
 
 	const sf::Font& AssetManager::GetFont(const std::string& name)
