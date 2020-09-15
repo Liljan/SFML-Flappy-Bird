@@ -1,7 +1,6 @@
+#include "Defines.h"
 #include <SFML/Graphics.hpp>
 
-#define SCREEN_WIDTH 1280
-#define SCREEN_HEIGHT 720 
 
 int main()
 {
