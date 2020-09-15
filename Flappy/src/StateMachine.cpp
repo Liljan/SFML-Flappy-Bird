@@ -9,6 +9,8 @@ namespace Sonar
 		_isReplacing = isReplacing;
 
 		_newState = std::move(state);
+
+		ProcessStateChanges();
 	}
 
 	void StateMachine::RemoveState()

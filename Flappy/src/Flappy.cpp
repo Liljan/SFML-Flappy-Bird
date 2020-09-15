@@ -1,23 +1,13 @@
+#pragma once
+
 #include "Defines.h"
-#include <SFML/Graphics.hpp>
+
+#include "Game.h"
 
 
 int main()
 {
-	sf::RenderWindow window;
-	window.create(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "Fläppi Börd");
-
-	while(window.isOpen())
-	{
-		// Handle events
-		// Update
-		// Render
-
-		window.clear(sf::Color::Black);
-
-		window.display();
-	}
-
+	Sonar::Game(SCREEN_WIDTH, SCREEN_HEIGHT, "Börd");
 
 	return EXIT_SUCCESS;
 }

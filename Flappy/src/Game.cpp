@@ -1,5 +1,8 @@
-#include "Game.h"
 #pragma once
+#include "Game.h"
+
+#include "SplashState.h"
+
 
 namespace Sonar
 {
@@ -9,6 +12,8 @@ namespace Sonar
 			sf::Style::Close | sf::Style::Titlebar);
 
 		_data->window.setFramerateLimit(60);
+
+		_data->stateMachine.AddState(StateRef(new SplashState(_data)));
 
 		Run();
 	}
